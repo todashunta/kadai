@@ -1,0 +1,306 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    padding-top: 15px;
+    position: absolute;
+    width: 100%;
+    border-bottom: solid 3px #094067;
+    background-color: rgba(255, 255, 255, 0.408);
+    z-index: 2;
+}
+
+#head-text{
+    display: flex;
+}
+
+header img{
+    width: 110px;
+    height: 44px;
+    margin: 20px;
+}
+
+header h1{
+    line-height: 80px;
+    color: rgb(71, 71, 140);
+    font-style: italic;
+}
+
+.slider{
+    height: 80vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.slider-item{
+    display: block;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+}
+
+.slider-in{
+    position: relative;
+    animation  : slide-in 6s;
+}
+@keyframes slide-in{
+    0%{
+        transform: scale(0.8,0.8) translate(calc(-50% - 12%), 0%);
+        opacity: 0;
+    }
+    10%{
+        transform: scale(1 ,1) translate(-50%, 0%);
+        opacity: 1;
+    }
+    80%{
+        transform: scale(1 ,1) translate(-50%, 0%);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.8,0.8) translate(calc(-50% - 12%), 0%);
+        opacity: 0;
+    }
+
+}
+
+h1 span{
+    color: red;
+}
+
+#menu{
+    width: 50%;
+    margin-left: 50%;
+}
+
+#menu > a{
+    font-size: 25px;
+    padding: 0 7% 0 7%;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 208, 78);
+    text-shadow: 2px 2px 2px rgb(148, 116, 56);
+}
+
+#menu a:nth-child(2),
+#menu a:nth-child(3){
+    border-left: solid 2px #094067;
+}
+
+#menu > a:hover{
+    transition: 1s;
+    color: rgb(251, 91, 91);
+    text-shadow: 3px 3px 2px rgb(223, 133, 98);
+}
+
+#SIer{
+    position: absolute;
+    font-weight: 800;
+    font-size: 30px;
+    left: 35%;
+    top: 300px;
+    color: white;
+    z-index: 5;
+    text-shadow: 4px 4px 3px rgb(57, 57, 57);
+}
+
+#SIer h2 span{
+    font-size: 60px;
+    text-shadow: 4px 4px 2px rgb(117, 76, 0);
+    color: rgb(255, 125, 49);
+}
+
+#top{
+    transition: 0.5s;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgb(236, 118, 34);
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 5;
+}
+
+#top:hover{
+    background-color: rgb(251, 85, 8);
+}
+
+main{
+    margin: 0;
+    padding-top: 1px;
+    padding-bottom: 100px;
+    background:
+    url(image/tirol/milk.jfif),
+    url(image/tirol/almond.jfif),
+    url(image/tirol/coffee.jpg),
+    url(image/tirol/nuts.jfif),
+    url(image/tirol/white.jpg),
+    url(image/tirol/bis.jfif),
+    url(image/tirol/milk.jfif),
+    url(image/tirol/almond.jfif),
+    url(image/tirol/coffee.jpg),
+    url(image/tirol/nuts.jfif),
+    url(image/tirol/white.jpg),
+    url(image/tirol/bis.jfif);
+    background-size: 350px;
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+    background-position:
+    center calc(360px * 0),
+    center calc(360px * 1),
+    center calc(360px * 2),
+    center calc(360px * 3),
+    center calc(360px * 4),
+    center calc(360px * 5),
+    center calc(360px * 6),
+    center calc(360px * 7),
+    center calc(360px * 8),
+    center calc(360px * 9),
+    center calc(360px * 10),
+    center calc(360px * 11);
+}
+
+
+#main div{
+    margin-top: 100px;
+    background-color: rgba(238, 243, 255, 0.96);
+    font-size: 25px;
+}
+
+#main div p{
+    margin:  0 6% 0 6%;
+}
+
+.text{
+    position: relative;
+    top: 20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#main div h3{
+    font-size: 60px;
+    font-style: italic;
+    position: absolute;
+}
+
+.scroll-in-to-right{
+    opacity: 0;
+    transform: translate(-50px, 0);
+}
+
+.scroll-in-to-left{
+    opacity: 0;
+    transform: translate(50px, 0px);
+}
+.scroll-in-to-top{
+    opacity: 0;
+    transform: translate(0, 50px);
+}
+
+.scroll-in-to-bottom{
+    opacity: 0;
+    transform: translate(0, -50px);
+}
+
+.about h3{
+    color: rgb(255, 189, 6);
+    text-shadow: 4px 4px 1px rgb(117, 98, 63);
+    left: -200px;
+}
+
+.about{
+    margin-left: 25%;
+    width: 65%;
+    height: 700px;
+    transition: 1s;
+    box-shadow: 20px 20px 0px rgb(19, 38, 114);
+}
+.about video{
+    margin-left: 10%;
+    height: 50%;
+}
+
+.goal h3{
+    color: rgb(255, 189, 6);
+    text-shadow: 4px 4px 1px rgb(160, 127, 66);
+    left: -200px;
+}
+
+.goal{
+    font-weight: 700;
+    transition: 1s;
+    margin-left: 30%;
+    width: 70%;
+    box-shadow: -20px 20px 0px rgb(19, 38, 114);
+    height: 600px;
+}
+
+.goal img{
+    height: 70%;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.story h3{
+    color: rgb(255, 189, 6);
+    text-shadow: 4px 4px 1px rgb(160, 127, 66);
+    right: -200px;
+}
+.story{
+    margin-left: 100px;
+    transition: 1s;
+    margin-left: 10%;
+    width: 70%;
+    box-shadow: 20px 20px 0px rgb(19, 38, 114);
+}
+
+.story > div {
+    display: flex;
+}
+.story .image{
+    display: flex;
+    flex-flow: column;
+    justify-content:space-between;
+    width: 15%;
+    margin: 20px;
+}
+.story .text li{
+    margin-left: 40px;
+}
+.scroll-in{
+    transform: translate(0,0);
+    z-index: 2;
+    opacity: 1;
+}
+
+footer{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(196, 196, 196);
+    height: 300px;
+    color: white;
+}
+
+footer p{
+    position: relative;
+    top: 100px;
+}
+main{
+    background-color: rgb(255, 255, 255);
+}
