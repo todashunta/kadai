@@ -28,7 +28,7 @@ function slide() {
     }
   }
   sliderCount++;
-  if(sliderCount >= 2){
+  if(sliderCount >= sliderItems.length){
     sliderCount = 0;
   }
 }
