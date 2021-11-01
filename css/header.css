@@ -1,0 +1,71 @@
+
+header{
+    padding-top: 15px;
+    position: absolute;
+    width: 100%;
+    border-bottom: solid 3px #094067;
+    background-color: rgba(255, 255, 255, 0.408);
+    z-index: 2;
+}
+
+#head-text{
+    display: flex;
+}
+
+header img{
+    width: 110px;
+    height: 44px;
+    margin: 20px;
+}
+
+header h1{
+    line-height: 80px;
+    color: rgb(71, 71, 140);
+    font-style: italic;
+}
+
+h1 span{
+    color: red;
+}
+
+#menu{
+    width: 50%;
+    margin-left: 50%;
+}
+
+#menu > a{
+    font-size: 25px;
+    padding: 0 7% 0 7%;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 208, 78);
+    text-shadow: 2px 2px 2px rgb(148, 116, 56);
+}
+
+#menu a:nth-child(2),
+#menu a:nth-child(3){
+    border-left: solid 2px #094067;
+}
+
+#menu > a:hover{
+    transition: 1s;
+    color: rgb(251, 91, 91);
+    text-shadow: 3px 3px 2px rgb(223, 133, 98);
+}
+
+#SIer{
+    position: absolute;
+    font-weight: 800;
+    font-size: 30px;
+    left: 35%;
+    top: 300px;
+    color: white;
+    z-index: 5;
+    text-shadow: 4px 4px 3px rgb(57, 57, 57);
+}
+
+#SIer h2 span{
+    font-size: 60px;
+    text-shadow: 4px 4px 2px rgb(117, 76, 0);
+    color: rgb(255, 125, 49);
+}
