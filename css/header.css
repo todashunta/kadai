@@ -34,7 +34,7 @@ h1 span{
 }
 
 #menu > a{
-    font-size: 25px;
+    font-size: 1.7rem;
     padding: 0 7% 0 7%;
     text-decoration: none;
     font-weight: bold;
@@ -56,7 +56,7 @@ h1 span{
 #SIer{
     position: absolute;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 2rem;
     left: 35%;
     top: 300px;
     color: white;
@@ -65,7 +65,7 @@ h1 span{
 }
 
 #SIer h2 span{
-    font-size: 60px;
+    font-size: 4rem;
     text-shadow: 4px 4px 2px rgb(117, 76, 0);
     color: rgb(255, 125, 49);
 }
