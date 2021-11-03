@@ -1,5 +1,4 @@
-
-header{
+header {
     padding-top: 15px;
     position: absolute;
     width: 100%;
@@ -8,102 +7,149 @@ header{
     z-index: 2;
 }
 
-#head-text{
+#head-text {
     display: flex;
 }
 
-header img{
+header img {
     width: 110px;
     height: 44px;
-    margin: 20px;
+    margin: 2vw;
 }
 
-header h1{
-    line-height: 80px;
+header h1 {
+    padding-top: 20px;
     color: rgb(71, 71, 140);
     font-style: italic;
+    font-size: 2rem;
 }
 
-h1 span{
+h1 span {
     color: red;
 }
 
-#menu{
+#menu {
+    display: flex;
     width: 50%;
-    margin-left: 50%;
+    margin-left: 40%;
+    justify-content: space-evenly;
 }
 
-#menu > a{
+#menu>a {
     font-size: 1.7rem;
-    padding: 0 7% 0 7%;
+    padding: 0 1vw 0 1vw;
     text-decoration: none;
     font-weight: bold;
     color: rgb(255, 208, 78);
     text-shadow: 2px 2px 2px rgb(148, 116, 56);
 }
 
-#menu a:nth-child(2),
-#menu a:nth-child(3){
+#menu div {
     border-left: solid 2px #094067;
 }
 
-#menu > a:hover{
+#menu>a:hover {
     transition: 1s;
     color: rgb(251, 91, 91);
     text-shadow: 3px 3px 2px rgb(223, 133, 98);
 }
 
-#SIer{
+#SIer {
     position: absolute;
     font-weight: 800;
     font-size: 2rem;
     left: 35%;
-    top: 300px;
+    top: 30vw;
     color: white;
     z-index: 5;
-    text-shadow: 4px 4px 3px rgb(57, 57, 57);
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
-#SIer h2 span{
-    font-size: 4rem;
+#SIer h2 span {
+    font-size: 3rem;
     text-shadow: 4px 4px 2px rgb(117, 76, 0);
     color: rgb(255, 125, 49);
 }
 
-
-.slider{
+.slider {
     height: 80vw;
     background-color: rgb(255, 255, 255);
 }
 
-.slider-item{
+.slider-item {
     display: block;
-    width: 100%;
+    width: 0%;
     position: absolute;
     opacity: 0;
     left: 50%;
 }
 
-.slider-in{
+.slider-in {
     position: relative;
-    animation  : slide-in 6s;
+    animation: slide-in 6s;
+    width: 100%;
 }
-@keyframes slide-in{
-    0%{
-        transform: scale(0.8,0.8) translate(calc(-50% - 12%), 0%);
-        opacity: 0;
-    }
-    10%{
-        transform: scale(1 ,1) translate(-50%, 0%);
-        opacity: 1;
-    }
-    80%{
-        transform: scale(1 ,1) translate(-50%, 0%);
-        opacity: 1;
-    }
-    100%{
-        transform: scale(0.8,0.8) translate(calc(-50% - 12%), 0%);
-        opacity: 0;
-    }
 
+@keyframes slide-in {
+    0% {
+        transform: scale(0.8, 0.8) translate(calc(-50% - 12%), 0%);
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1, 1) translate(-50%, 0%);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1, 1) translate(-50%, 0%);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8, 0.8) translate(calc(-50% - 12%), 0%);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header img {
+        width: 90px;
+        height: 100%;
+    }
+    #menu>a {
+        font-size: 1.3rem;
+    }
+    #SIer {
+        font-size: 1.3rem;
+    }
+    #SIer h2 span {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        padding: 0%;
+        font-size: 1.4rem;
+    }
+    header img {
+        width: 60px;
+        height: 100%;
+    }
+    #menu {
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+    }
+    #menu>a {
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+    #SIer {
+        font-size: 0.9rem;
+    }
+    #SIer h2 span {
+        font-size: 1.5rem;
+    }
 }

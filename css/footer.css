@@ -1,13 +1,5 @@
-
-footer{
+footer {
+    height: 100px;
     text-align: center;
-    font-size: 30px;
-    background-color: rgb(196, 196, 196);
-    height: 300px;
-    color: white;
-}
-
-footer p{
-    position: relative;
-    top: 100px;
+    line-height: 100px;
 }

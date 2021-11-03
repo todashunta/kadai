@@ -1,24 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0%;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
-    overflow-x: hidden;
-}
 
-#top{
-    transition: 0.5s;
+#top {
     position: fixed;
-    bottom: 100px;
-    right: 100px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    transition: 0.5s;
+    bottom: 10%;
+    right: 85px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 15px;
+    border-radius: 50%;
     background-color: rgb(236, 118, 34);
-    line-height: 70px;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -26,157 +25,187 @@ body{
     z-index: 5;
 }
 
-#top:hover{
+#top:hover {
     background-color: rgb(251, 85, 8);
 }
 
-main{
+main {
     margin: 0;
     padding-top: 1px;
     padding-bottom: 100px;
-    background:
-    url(../image/tirol/milk.jfif),
-    url(../image/tirol/almond.jfif),
-    url(../image/tirol/coffee.jpg),
-    url(../image/tirol/nuts.jfif),
-    url(../image/tirol/white.jpg),
-    url(../image/tirol/bis.jfif),
-    url(../image/tirol/milk.jfif),
-    url(../image/tirol/almond.jfif),
-    url(../image/tirol/coffee.jpg),
-    url(../image/tirol/nuts.jfif),
-    url(../image/tirol/white.jpg),
-    url(../image/tirol/bis.jfif);
+    background: url(../image/tirol/milk.jfif), url(../image/tirol/almond.jfif), url(../image/tirol/coffee.jpg), url(../image/tirol/nuts.jfif), url(../image/tirol/white.jpg), url(../image/tirol/bis.jfif), url(../image/tirol/milk.jfif), url(../image/tirol/almond.jfif), url(../image/tirol/coffee.jpg), url(../image/tirol/nuts.jfif), url(../image/tirol/white.jpg), url(../image/tirol/bis.jfif);
     background-size: 350px;
-    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-    background-position:
-    center calc(360px * 0),
-    center calc(360px * 1),
-    center calc(360px * 2),
-    center calc(360px * 3),
-    center calc(360px * 4),
-    center calc(360px * 5),
-    center calc(360px * 6),
-    center calc(360px * 7),
-    center calc(360px * 8),
-    center calc(360px * 9),
-    center calc(360px * 10),
-    center calc(360px * 11);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: center calc(360px * 0), center calc(360px * 1), center calc(360px * 2), center calc(360px * 3), center calc(360px * 4), center calc(360px * 5), center calc(360px * 6), center calc(360px * 7), center calc(360px * 8), center calc(360px * 9), center calc(360px * 10), center calc(360px * 11);
+    background-color: white;
 }
 
-
-#main div{
+#main>div {
     margin-top: 100px;
     background-color: rgba(238, 243, 255, 0.96);
     font-size: 25px;
 }
 
-#main div p{
-    margin:  0 6% 0 6%;
+#main div p {
+    margin: 0 6% 0 6%;
 }
 
-.text{
+.text {
     position: relative;
     top: 20px;
     width: 90%;
     margin: auto;
+    margin-left: 20px;
     margin-bottom: 50px;
 }
 
-#main div h3{
-    font-size: 60px;
+#main div h3 {
+    font-size: 3.5rem;
     font-style: italic;
     position: absolute;
 }
 
-.scroll-in-to-right{
+.scroll-in-to-right {
     opacity: 0;
     transform: translate(-50px, 0);
 }
 
-.scroll-in-to-left{
+.scroll-in-to-left {
     opacity: 0;
     transform: translate(50px, 0px);
 }
-.scroll-in-to-top{
+
+.scroll-in-to-top {
     opacity: 0;
     transform: translate(0, 50px);
 }
 
-.scroll-in-to-bottom{
+.scroll-in-to-bottom {
     opacity: 0;
     transform: translate(0, -50px);
 }
 
-.about h3{
+.about h3 {
     color: rgb(255, 189, 6);
     text-shadow: 4px 4px 1px rgb(117, 98, 63);
-    left: -200px;
+    left: -20vw;
 }
 
-.about{
-    margin-left: 25%;
-    width: 65%;
+.about {
+    margin-left: 26vw;
+    width: 70vw;
     transition: 1s;
     box-shadow: 20px 20px 0px rgb(19, 38, 114);
 }
-.about video{
+
+.about video {
     margin-left: 10%;
     width: 80%;
 }
 
-.goal h3{
+.goal h3 {
     color: rgb(255, 189, 6);
     text-shadow: 4px 4px 1px rgb(160, 127, 66);
     left: -200px;
 }
 
-.goal{
+.goal {
     font-weight: 700;
     transition: 1s;
-    margin-left: 30%;
-    width: 70%;
+    margin-left: 28vw;
+    width: 70vw;
     box-shadow: -20px 20px 0px rgb(19, 38, 114);
 }
 
-.goal img{
+.goal img {
     width: 70%;
     position: relative;
     left: 10%;
 }
 
-.story h3{
+.story h3 {
     color: rgb(255, 189, 6);
     text-shadow: 4px 4px 1px rgb(160, 127, 66);
     right: -200px;
 }
-.story{
+
+.story {
     margin-left: 100px;
     transition: 1s;
-    margin-left: 10%;
-    width: 70%;
+    margin-left: 10vw;
+    width: 70vw;
     box-shadow: 20px 20px 0px rgb(19, 38, 114);
 }
 
-.story > div {
+.story>div {
     display: flex;
 }
-.story .image{
+
+.story .image {
     display: flex;
     flex-flow: column;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 15%;
     margin: 20px;
 }
-.story .text li{
+
+.story .text li {
     margin-left: 40px;
 }
-.scroll-in{
-    transform: translate(0,0);
+
+.scroll-in {
+    transform: translate(0, 0);
     z-index: 2;
     opacity: 1;
 }
 
-main{
-    background-color: rgb(255, 255, 255);
+@media screen and (max-width: 1000px) {
+    #top {
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 10px;
+    }
+    #main div h3 {
+        position: relative;
+        left: 0%;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .text {
+        position: relative;
+        top: 10px;
+        width: 90%;
+        margin: auto;
+        margin-left: 20px;
+        font-size: 1.3rem;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #top {
+        right: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 6px;
+    }
+    #main div h3 {
+        font-size: 2rem;
+    }
+    .text {
+        position: relative;
+        top: 5px;
+        width: 100%;
+        margin: auto;
+        margin-left: 5px;
+        margin-bottom: 50px;
+        font-size: 0.8rem;
+    }
+    .about, .goal, .story {
+        width: 90vw;
+        margin: auto;
+    }
 }
